@@ -198,7 +198,7 @@ case "$1" in
   folly)
     NAME=folly
     SRCDIR=cachelib/external/$NAME
-    update_submodules=yes
+    update_submodules=no
     cmake_custom_params="-DBUILD_SHARED_LIBS=ON"
     if test "$build_tests" = "yes" ; then
         cmake_custom_params="$cmake_custom_params -DBUILD_TESTS=ON"
@@ -210,7 +210,7 @@ case "$1" in
   fizz)
     NAME=fizz
     SRCDIR=cachelib/external/$NAME/$NAME
-    update_submodules=yes
+    update_submodules=no
     cmake_custom_params="-DBUILD_SHARED_LIBS=ON"
     if test "$build_tests" = "yes" ; then
         cmake_custom_params="$cmake_custom_params -DBUILD_TESTS=ON"
@@ -222,7 +222,7 @@ case "$1" in
   wangle)
     NAME=wangle
     SRCDIR=cachelib/external/$NAME/$NAME
-    update_submodules=yes
+    update_submodules=no
     cmake_custom_params="-DBUILD_SHARED_LIBS=ON"
     if test "$build_tests" = "yes" ; then
         cmake_custom_params="$cmake_custom_params -DBUILD_TESTS=ON"
@@ -234,14 +234,14 @@ case "$1" in
   mvfst)
     NAME=mvfst
     SRCDIR=cachelib/external/$NAME
-    update_submodules=yes
+    update_submodules=no
     cmake_custom_params="-DBUILD_SHARED_LIBS=ON"
     ;;
 
   fbthrift)
     NAME=fbthrift
     SRCDIR=cachelib/external/$NAME
-    update_submodules=yes
+    update_submodules=no
     cmake_custom_params="-DBUILD_SHARED_LIBS=ON"
     ;;
 
