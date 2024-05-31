@@ -20,3 +20,8 @@ cachelib/external/gflags/
 cachelib/external/glog/
 cachelib/external/googletest/
 cachelib/external/sparsemap/
+
+
+build-*
+examples/simple_cache/build/
+opt/
